@@ -1,0 +1,217 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+    }
+.clearfix {
+ 	display: inline-block;
+ }
+/* start commented backslash hack \*/
+* html .clearfix { 
+	height: 1%; 
+}
+.clearfix { 
+	display: block; 
+}
+/* close commented backslash hack */
+
+*{
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+/*    border: 2px solid red;
+*/}
+
+ul{
+    list-style-type: none;
+    display: inline-block;
+    float: right;
+}
+
+li{
+    display: inline-block;
+}
+
+h1{
+    display: inline-block;
+    /*padding: 10px;*/
+}
+.nav-sections {
+   float: right;
+   display: inline-block;
+}
+
+.nav-header{
+    display: inline-block;
+    float: left;
+}
+.sections{
+    display: inline-block;
+    float: right;
+    padding: 3px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container{
+    margin: 0px auto;
+    width: 80%;
+/*    border: 1px solid red;
+*/}
+
+.logo {
+    float: left;
+    display: inline-block;
+} 
+
+.small-img{
+    padding-left: 120px;
+}
+.big-left{
+    margin-bottom: 20px;
+}
+.right{
+    float: right;
+    display: inline-block;
+}
+
+.left {
+    float: left;
+    display: inline-block;
+}
+
+.two-thirds{
+    width: 66.66666%;
+    height: 0px, auto;
+}
+
+.contact {
+    display: inline-block;
+}
+
+.social {
+    display: inline-block;
+}
+.one-third{
+    width: 33.33333%;
+    height: 0px auto;
+}
+
+.one-third-img {
+    height: 50%;
+    width: 100%;
+    display: block;
+}
+
+.two-thirds-img{
+    height: 100%;
+    width: 66.6666%;
+    display: block;
+}
+
+.two-right {
+    padding-left: 20px;
+}
+
+.two-left {
+    padding-right: 20px;
+}
+
+.top{
+    padding-bottom: 10px;
+}
+
+.bottom{
+    padding-top: 10px;
+}
+
+.last-left {
+    margin-right: -40px;
+
+}
+
+.bottom-one-third{
+    height: 50%;
+}
+.last-mid {
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.full{
+    height: 100%;
+    width: 100%;
+}
+.last-right {
+    padding-left: 10px;
+}
+.footer{
+    padding-top: 20px;
+}
+
+.image-logo{
+    display: inline-block;
+    float: left;
+    padding-left: 120px;
+}
+
+.blurb{
+    text-align: left;
+    padding-right: 20%;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.btom{
+    padding: 3px;
+}
+
+.fade {
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+.fade:hover {
+  opacity: 0.5;
+}
+.footer-space{
+    padding-top: 30px;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+
+/* mouse over link */
+a:hover {
+    color: gray;
+}
+
+/* selected link */
+a:active {
+    color: gray;
+}
+
+
+/*<div class="clearfix container bottom-row">
+            <div class="bottom-one-third clearfix left">
+                <img class="one-third left " src="dasani.jpg">
+            </div>
+            <div class="bottom-one-third clearfix left">
+                <img class="one-third left" src="dasani.jpg">
+            </div>
+            
+            <div class="bottom-one-third clearfix left">
+                <img class="one-third left " src="dasani.jpg">
+            </div>
+            
+            
+        </div>*/
