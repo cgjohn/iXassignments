@@ -1,0 +1,39 @@
+.hero-txt{
+	color: white;	
+}
+
+.transparent {
+	background: transparent;
+}
+
+.hero-large {
+	margin-top: 25%;
+}
+
+.nav {
+	background: transparent;
+	border: transparent;
+	position: relative;	
+}
+.hero-img{
+	background-image: url("cape-town.jpeg");
+	height: 800px;
+	width: 100%;
+}
+
+.box{
+/*	border: 2px solid black;
+*/	display: inline-block;
+}
+
+.conatains-two{
+	float: right;
+}
+.hero-txt {
+
+}
+
+.left{
+	display: inline-block;
+	float: left;
+}
