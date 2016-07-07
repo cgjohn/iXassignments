@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ToDo</title>
+</head>
+<body ng-app = "theGroceryList">
+	<div ng-controller = "groceryCtrl">
+​		<button ng-click="emptyCart()">Empty Cart</button>
+		<h1>Connor's Grocery List</h1>
+		<h6>Based off of Emma's</h6>
+​
+		<!-- Get the items -->
+		<h4>Enter the item you would like: </h4>
+		<input type="text" ng-model="item" >
+​
+		<!-- Get the number of items -->
+		<h4>Enter the amount you would like: </h4>
+		<input ng-model="amount">
+		<button ng-click="addItem()">Add</button>
+​
+		<!-- Log the items in the list -->
+		<h4>Your current grocery list: </h4>
+​
+<label>Search: <input ng-model="searchText"></label>
+		<ol> 
+			<li ng-repeat="items in groceries | filter:searchText" >
+				<div ng-hide="items.isEditing">
+					{{ $index }}
+					{{items.name}} :  {{items.amt}} 
+					<button ng-click="add(items)"> + </button>
+					<button ng-click="subtract(items)"> - </button>
+					<button ng-click="items.isEditing = true">Edit</button>
+					<button ng-click="delete($index)"> Delete </button> 
+				</div>
+				<div ng-show="items.isEditing">
+					<input ng-model="items.name">
+					<button ng-click="items.isEditing = false"></button>
+				</div>
+				
+			</li>
+
+			
+		</ol>
+​
+	</div>
+​
+	<script src="angular.js"></script>	
+	<script src="grocery.js"></script>
+</body>
+</html>
