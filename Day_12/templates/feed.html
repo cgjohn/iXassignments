@@ -1,0 +1,32 @@
+<div class="container-fluid mainCont">
+	<div class="row">
+		<div class="header">
+			<h1 class="col-xs-2 col-xs-offset-5">Chommies!</h1>
+			<button class="myButton"> <a href="#/myProfile">My Chommie Profile :) </a></button>
+		</div>
+	</div>
+	<div class="col-xs-offset-3 col-xs-6 container-fluid">
+		<div class="inputs">
+			<select ng-model="selectedBru" ng-options="b.id as b.first_name for b in brus" ></select>
+
+			<input class="textBox" placeholder="Put message here!" ng-model="newPropsValue">
+
+			<button class="inButton" ng-click="sendProps()"> Send Props </button>
+			<button class="inButton" ng-click="refreshProps()"> Refresh Props </button>
+
+		</div>
+
+		<div class="errorMessage">
+				<h3> {{errorMessage}} </h3>
+			</div>
+
+		<div class="row">	
+			<div class="">
+				<div class="messageCont" ng-repeat="p in props">
+					<h4 class="name">{{p.receiver.first_name}} {{p.receiver.last_name}}</h4>
+					<p class="message">Message: {{p.text}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

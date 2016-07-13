@@ -1,0 +1,14 @@
+<div class="container" ng-controller="MainCtrl">
+	<h1>Search for a movie:</h1>
+	<form class="col-sm-8">
+		<input placeholder="Search" type="text" class="form-control" ng-model="searchIn">	
+	</form>
+	<div class="col-sm-4">
+		<button class="submit" ng-click="submit()"> Submit </button>
+	</div>
+	<div class="col-sm-12" >
+		<div ng-repeat="m in movies">
+			<a href="#/movie/{{m.imdbID}}">{{m.Title}} </a>
+		</div>
+	</div>
+</div>
